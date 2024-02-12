@@ -45,12 +45,6 @@ if site == "gogoanime":
     url = f"{API}/anime/{site}/info/" + selected_id
     response = requests.get(url)
     data = response.json()
-else:
-    url = f"{API}/anime/zoro/info?id={selected_id}"
-    response = requests.get(url)
-    data = response.json()
-    id = data.get("number", [])
-    print(id)
 
 # Check if there are episodes in the data
 episodes = data.get("episodes", [])
