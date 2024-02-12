@@ -7,7 +7,7 @@ from concurrent.futures import ThreadPoolExecutor
 config = configparser.ConfigParser()
 config.read("config.ini")
 
-site = config.get("AniBatch", "site")
+site = "gogoanime"
 path = config.get("AniBatch", "path")
 API = config.get("AniBatch", "API")
 amount = config.get("AniBatch", "amount")
